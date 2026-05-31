@@ -84,28 +84,28 @@ export default function StarCreditoLanding() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-[#0A0A0A] text-white">
       {/* NAV */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+      <nav className="sticky top-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Star Crédito" className="w-9 h-9 object-contain" />
             <div>
               <div className="font-semibold text-2xl tracking-tight">Star Crédito</div>
-              <div className="text-[10px] text-slate-500 -mt-1">Soluções Financeiras</div>
+              <div className="text-[10px] text-white/60 -mt-1">Soluções Financeiras</div>
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#como-funciona" className="hover:text-emerald-700 transition">Como funciona</a>
-            <a href="#depoimentos" className="hover:text-emerald-700 transition">Resultados reais</a>
-            <a href="#simulador" className="hover:text-emerald-700 transition">Simulador</a>
-            <a href="#faq" className="hover:text-emerald-700 transition">Dúvidas</a>
+            <a href="#como-funciona" className="hover:text-[#00A8FF] transition">Como funciona</a>
+            <a href="#depoimentos" className="hover:text-[#00A8FF] transition">Resultados reais</a>
+            <a href="#simulador" className="hover:text-[#00A8FF] transition">Simulador</a>
+            <a href="#faq" className="hover:text-[#00A8FF] transition">Dúvidas</a>
           </div>
 
           <button
             onClick={() => abrirWhatsApp()}
-            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-2xl font-semibold text-sm transition active:scale-[0.985]"
+            className="flex items-center gap-2 bg-[#00A8FF] hover:bg-[#0090E0] text-white px-6 py-3 rounded-2xl font-semibold text-sm transition active:scale-[0.985]"
           >
             <MessageCircle className="w-4 h-4" />
             Falar no WhatsApp
@@ -114,9 +114,9 @@ export default function StarCreditoLanding() {
       </nav>
 
       {/* HERO */}
-      <section className="bg-slate-950 text-white pt-16 pb-20">
+      <section className="bg-[#0A0A0A] text-white pt-16 pb-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-emerald-400 text-xs font-medium tracking-[1px] px-4 py-1.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-[#00A8FF] text-xs font-medium tracking-[1px] px-4 py-1.5 rounded-full mb-6">
             ATENDIMENTO EM TODO O BRASIL • PROCESSO JUDICIAL
           </div>
 
@@ -124,7 +124,7 @@ export default function StarCreditoLanding() {
             Nome sujo não precisa<br />ser o fim da linha.
           </h1>
           
-          <p className="max-w-2xl mx-auto text-xl text-slate-300 mb-10">
+          <p className="max-w-2xl mx-auto text-xl text-white/70 mb-10">
             Processo judicial transparente para quem precisa limpar o nome e voltar a ter acesso a consignado com taxas justas. 
             Servidores públicos, aposentados do INSS e quem já tentou de tudo.
           </p>
@@ -132,22 +132,22 @@ export default function StarCreditoLanding() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => document.getElementById('simulador')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-white text-slate-950 px-10 py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 hover:bg-slate-100 transition active:scale-[0.985]"
+              className="bg-[#00A8FF] hover:bg-[#0090E0] text-white px-10 py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 transition active:scale-[0.985]"
             >
               Ver quanto posso conseguir <ArrowRight className="w-5 h-5" />
             </button>
             <button 
               onClick={() => abrirWhatsApp("Olá! Gostaria de entender se o processo judicial pode me ajudar a limpar o nome e conseguir consignado.")}
-              className="border border-white/40 hover:bg-white/10 px-10 py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 transition active:scale-[0.985]"
+              className="border border-white/30 hover:bg-white/5 px-10 py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 transition active:scale-[0.985]"
             >
               <Phone className="w-5 h-5" /> Falar com especialista
             </button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-12 text-sm text-slate-400">
-            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> +12.800 casos atendidos em 2025</div>
-            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Média de 23 a 31 dias</div>
-            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-400" /> Atendimento humano no WhatsApp</div>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-12 text-sm text-white/50">
+            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#00A8FF]" /> +12.800 casos atendidos em 2025</div>
+            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#00A8FF]" /> Média de 23 a 31 dias</div>
+            <div className="flex items-center gap-2"><Check className="w-4 h-4 text-[#00A8FF]" /> Atendimento humano no WhatsApp</div>
           </div>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function StarCreditoLanding() {
       {/* PROBLEM */}
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-16">
         <div className="max-w-2xl mb-12">
-          <div className="text-emerald-600 text-sm font-semibold tracking-wider mb-3">A GENTE SABE COMO É</div>
+          <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">A GENTE SABE COMO É</div>
           <h2 className="text-5xl font-semibold tracking-tight">Fechar portas por causa de nome sujo cansa. E machuca.</h2>
         </div>
 
@@ -165,23 +165,23 @@ export default function StarCreditoLanding() {
             { icon: <Clock className="w-6 h-6" />, titulo: "Já tentou de tudo e nada resolveu", texto: "Serasa, Acordo Certo, feirões... às vezes a dívida é antiga, o credor não negocia ou o score não sobe o suficiente para liberar consignado." },
             { icon: <Users className="w-6 h-6" />, titulo: "Muitos são servidores ou INSS", texto: "Pessoas que têm renda estável mas o nome sujo impede de usar o consignado com as melhores taxas do mercado." },
           ].map((item, i) => (
-            <div key={i} className="bg-slate-50 border border-slate-200 rounded-3xl p-8">
-              <div className="text-emerald-600 mb-5">{item.icon}</div>
+            <div key={i} className="bg-[#121212] border border-white/10 rounded-3xl p-8">
+              <div className="text-[#00A8FF] mb-5">{item.icon}</div>
               <h3 className="font-semibold text-2xl mb-3 tracking-tight">{item.titulo}</h3>
-              <p className="text-slate-600 leading-relaxed">{item.texto}</p>
+              <p className="text-white/70 leading-relaxed">{item.texto}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* SOLUTION */}
-      <section className="bg-slate-950 text-white py-20">
+      <section className="bg-[#0A0A0A] py-20 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
             <div>
-              <div className="text-emerald-400 text-sm font-semibold tracking-wider mb-3">O QUE FAZEMOS DE DIFERENTE</div>
+              <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">O QUE FAZEMOS DE DIFERENTE</div>
               <h2 className="text-5xl font-semibold tracking-tight leading-none mb-6">Processo judicial de verdade, com contrato e transparência.</h2>
-              <p className="text-xl text-slate-300">Não somos mais um “limba nome” que promete mágica. Somos uma equipe de advogados que trabalha com ações judiciais cabíveis para quem precisa voltar a ter crédito — especialmente consignado.</p>
+              <p className="text-xl text-white/70">Não somos mais um “limba nome” que promete mágica. Somos uma equipe de advogados que trabalha com ações judiciais cabíveis para quem precisa voltar a ter crédito — especialmente consignado.</p>
             </div>
             <div className="space-y-6">
               {[
@@ -192,8 +192,8 @@ export default function StarCreditoLanding() {
                 "Atendimento humano no WhatsApp (não robô)",
               ].map((texto, i) => (
                 <div key={i} className="flex gap-4 text-lg">
-                  <div className="mt-1.5 text-emerald-400"><Check className="w-5 h-5" /></div>
-                  <div>{texto}</div>
+                  <div className="mt-1.5 text-[#00A8FF]"><Check className="w-5 h-5" /></div>
+                  <div className="text-white/80">{texto}</div>
                 </div>
               ))}
             </div>
@@ -204,7 +204,7 @@ export default function StarCreditoLanding() {
       {/* COMO FUNCIONA */}
       <section id="como-funciona" className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-14">
-          <div className="text-emerald-600 text-sm font-semibold tracking-wider mb-3">PROCESSO SIMPLES E TRANSPARENTE</div>
+          <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">PROCESSO SIMPLES E TRANSPARENTE</div>
           <h2 className="text-5xl font-semibold tracking-tight">Como funciona na prática</h2>
         </div>
         <div className="grid md:grid-cols-4 gap-6">
@@ -214,33 +214,33 @@ export default function StarCreditoLanding() {
             { num: "03", titulo: "Contrato + processo", desc: "Se for viável, assinamos contrato claro. Protocolamos a ação judicial com advogados especializados." },
             { num: "04", titulo: "Nome limpo + crédito", desc: "Em média 23 a 31 dias o nome sai das bases. Score começa a subir e você já pode buscar consignado melhor." },
           ].map((passo, i) => (
-            <div key={i} className="border border-slate-200 rounded-3xl p-8 relative">
-              <div className="text-emerald-600 text-6xl font-semibold tracking-tighter mb-8 opacity-90">{passo.num}</div>
+            <div key={i} className="bg-[#121212] border border-white/10 rounded-3xl p-8 relative">
+              <div className="text-[#00A8FF] text-6xl font-semibold tracking-tighter mb-8 opacity-90">{passo.num}</div>
               <h3 className="font-semibold text-2xl mb-4 tracking-tight">{passo.titulo}</h3>
-              <p className="text-slate-600 leading-relaxed">{passo.desc}</p>
+              <p className="text-white/70 leading-relaxed">{passo.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="bg-slate-50 py-20">
+      <section id="depoimentos" className="bg-[#121212] py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex justify-between items-end mb-10">
             <div>
-              <div className="text-emerald-600 text-sm font-semibold tracking-wider mb-3">RESULTADOS REAIS</div>
+              <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">RESULTADOS REAIS</div>
               <h2 className="text-5xl font-semibold tracking-tight">Quem já passou por aqui</h2>
             </div>
           </div>
-          <div className="bg-white border border-slate-200 rounded-3xl p-10">
+          <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-10">
             <div className="flex gap-2 mb-6">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-emerald-500 fill-emerald-500" />)}
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#00A8FF] fill-[#00A8FF]" />)}
             </div>
             <p className="text-2xl leading-tight tracking-tight mb-6">“{depoimentos[depoimentoAtual].texto}”</p>
             <div>
               <div className="font-semibold text-xl">{depoimentos[depoimentoAtual].nome}</div>
-              <div className="text-slate-500">{depoimentos[depoimentoAtual].cidade}</div>
-              <div className="text-emerald-600 text-sm font-medium mt-3">{depoimentos[depoimentoAtual].resultado}</div>
+              <div className="text-white/60">{depoimentos[depoimentoAtual].cidade}</div>
+              <div className="text-[#00A8FF] text-sm font-medium mt-3">{depoimentos[depoimentoAtual].resultado}</div>
             </div>
           </div>
         </div>
@@ -250,40 +250,40 @@ export default function StarCreditoLanding() {
       <section id="simulador" className="max-w-5xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="text-emerald-600 text-sm font-semibold tracking-wider mb-3">VEJA NA PRÁTICA</div>
+            <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">VEJA NA PRÁTICA</div>
             <h2 className="text-5xl font-semibold tracking-tight mb-6">Quanto você poderia acessar depois da limpeza?</h2>
-            <p className="text-xl text-slate-600">Esse simulador é apenas uma estimativa realista baseada nos casos que atendemos. O valor exato depende da sua análise individual.</p>
+            <p className="text-xl text-white/70">Esse simulador é apenas uma estimativa realista baseada nos casos que atendemos. O valor exato depende da sua análise individual.</p>
           </div>
-          <div className="bg-white border border-slate-200 rounded-3xl p-10">
+          <div className="bg-[#121212] border border-white/10 rounded-3xl p-10">
             <div className="space-y-6">
               <div>
-                <label className="block text-sm font-medium mb-2 text-slate-600">Valor aproximado que você precisa</label>
-                <input type="range" min="8000" max="60000" step="1000" value={simulador.valorDesejado} onChange={(e) => setSimulador({...simulador, valorDesejado: parseInt(e.target.value)})} className="w-full accent-emerald-600" />
+                <label className="block text-sm font-medium mb-2 text-white/60">Valor aproximado que você precisa</label>
+                <input type="range" min="8000" max="60000" step="1000" value={simulador.valorDesejado} onChange={(e) => setSimulador({...simulador, valorDesejado: parseInt(e.target.value)})} className="w-full accent-[#00A8FF]" />
                 <div className="text-4xl font-semibold tabular-nums mt-1">R$ {simulador.valorDesejado.toLocaleString('pt-BR')}</div>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2 text-slate-600">Sua renda mensal aproximada</label>
-                <input type="range" min="2000" max="12000" step="200" value={simulador.rendaMensal} onChange={(e) => setSimulador({...simulador, rendaMensal: parseInt(e.target.value)})} className="w-full accent-emerald-600" />
+                <label className="block text-sm font-medium mb-2 text-white/60">Sua renda mensal aproximada</label>
+                <input type="range" min="2000" max="12000" step="200" value={simulador.rendaMensal} onChange={(e) => setSimulador({...simulador, rendaMensal: parseInt(e.target.value)})} className="w-full accent-[#00A8FF]" />
                 <div className="text-4xl font-semibold tabular-nums mt-1">R$ {simulador.rendaMensal.toLocaleString('pt-BR')}</div>
               </div>
-              <button onClick={calcularSimulacao} className="w-full bg-emerald-600 hover:bg-emerald-700 transition text-white py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 active:scale-[0.985]">
+              <button onClick={calcularSimulacao} className="w-full bg-[#00A8FF] hover:bg-[#0090E0] transition text-white py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 active:scale-[0.985]">
                 Calcular estimativa <ArrowRight />
               </button>
             </div>
             {simulador.resultado && (
-              <div className="mt-8 pt-8 border-t border-slate-200">
-                <div className="text-sm text-slate-500 mb-4">Estimativa baseada nos nossos casos reais</div>
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <div className="text-sm text-white/50 mb-4">Estimativa baseada nos nossos casos reais</div>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-sm text-slate-500">Parcela estimada (72x)</div>
-                    <div className="text-4xl font-semibold text-emerald-600">R$ {simulador.resultado.parcela}</div>
+                    <div className="text-sm text-white/50">Parcela estimada (72x)</div>
+                    <div className="text-4xl font-semibold text-[#00A8FF]">R$ {simulador.resultado.parcela}</div>
                   </div>
                   <div>
-                    <div className="text-sm text-slate-500">Score estimado após</div>
+                    <div className="text-sm text-white/50">Score estimado após</div>
                     <div className="text-4xl font-semibold">{simulador.resultado.score}</div>
                   </div>
                 </div>
-                <button onClick={() => abrirWhatsApp(`Olá! Simulei no site e preciso de aproximadamente R$ ${simulador.valorDesejado}. Gostaria de fazer a análise do meu caso.`)} className="mt-6 w-full border border-emerald-600 text-emerald-700 hover:bg-emerald-50 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3">
+                <button onClick={() => abrirWhatsApp(`Olá! Simulei no site e preciso de aproximadamente R$ ${simulador.valorDesejado}. Gostaria de fazer a análise do meu caso.`)} className="mt-6 w-full border border-[#00A8FF] text-[#00A8FF] hover:bg-white/5 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3">
                   Quero falar com alguém sobre meu caso <MessageCircle className="w-4 h-4" />
                 </button>
               </div>
@@ -295,18 +295,18 @@ export default function StarCreditoLanding() {
       {/* FAQ */}
       <section id="faq" className="max-w-4xl mx-auto px-6 pb-20">
         <div className="text-center mb-12">
-          <div className="text-emerald-600 text-sm font-semibold tracking-wider mb-3">PERGUNTAS QUE TODO MUNDO FAZ</div>
+          <div className="text-[#00A8FF] text-sm font-semibold tracking-wider mb-3">PERGUNTAS QUE TODO MUNDO FAZ</div>
           <h2 className="text-5xl font-semibold tracking-tight">Dúvidas honestas, respostas honestas</h2>
         </div>
         <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-slate-200 rounded-3xl overflow-hidden">
-              <button onClick={() => setFaqAberto(faqAberto === index ? null : index)} className="w-full flex justify-between items-center px-8 py-6 text-left font-medium text-lg hover:bg-slate-50 transition">
+            <div key={index} className="bg-[#121212] border border-white/10 rounded-3xl overflow-hidden">
+              <button onClick={() => setFaqAberto(faqAberto === index ? null : index)} className="w-full flex justify-between items-center px-8 py-6 text-left font-medium text-lg hover:bg-white/5 transition">
                 {faq.pergunta}
-                <span className="text-2xl text-slate-400">{faqAberto === index ? '−' : '+'}</span>
+                <span className="text-2xl text-white/40">{faqAberto === index ? '−' : '+'}</span>
               </button>
               {faqAberto === index && (
-                <div className="px-8 pb-8 text-slate-600 leading-relaxed">
+                <div className="px-8 pb-8 text-white/70 leading-relaxed">
                   {faq.resposta}
                 </div>
               )}
@@ -316,39 +316,46 @@ export default function StarCreditoLanding() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-emerald-600 text-white py-20">
+      <section className="bg-[#00A8FF] text-white py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-6xl font-semibold tracking-tighter mb-6">Pronto para entender se o seu caso tem solução?</h2>
-          <p className="text-2xl text-emerald-100 mb-10">Análise gratuita. Sem pressão. Sem boleto surpresa.</p>
+          <p className="text-2xl text-white/90 mb-10">Análise gratuita. Sem pressão. Sem boleto surpresa.</p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => abrirWhatsApp()} className="bg-white text-emerald-700 px-14 py-5 rounded-2xl font-semibold text-xl flex items-center justify-center gap-3 hover:bg-emerald-50 active:scale-[0.985] transition">
+            <button 
+              onClick={() => abrirWhatsApp()}
+              className="bg-white text-[#00A8FF] px-14 py-5 rounded-2xl font-semibold text-xl flex items-center justify-center gap-3 hover:bg-white/90 active:scale-[0.985] transition"
+            >
               <MessageCircle className="w-6 h-6" /> Falar agora no WhatsApp
             </button>
-            <button onClick={() => document.getElementById('simulador')?.scrollIntoView({ behavior: 'smooth' })} className="border border-white/60 hover:bg-white/10 px-14 py-5 rounded-2xl font-semibold text-xl flex items-center justify-center gap-3 active:scale-[0.985] transition">
+            <button 
+              onClick={() => document.getElementById('simulador')?.scrollIntoView({ behavior: 'smooth' })}
+              className="border border-white/60 hover:bg-white/10 px-14 py-5 rounded-2xl font-semibold text-xl flex items-center justify-center gap-3 active:scale-[0.985] transition"
+            >
               Fazer o simulador primeiro
             </button>
           </div>
-          <p className="mt-6 text-emerald-200 text-sm">Atendimento de segunda a sábado • Resposta normalmente em menos de 1 hora</p>
+          <p className="mt-6 text-white/70 text-sm">Atendimento de segunda a sábado • Resposta normalmente em menos de 1 hora</p>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-slate-950 text-slate-400 py-16 text-sm">
+      <footer className="bg-[#0A0A0A] text-white/50 py-16 text-sm border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-y-10">
           <div>
             <div className="flex items-center gap-3 text-white mb-4">
-              <div className="w-8 h-8 bg-emerald-600 rounded-2xl flex items-center justify-center"><Star className="w-4 h-4" /></div>
+              <img src="/logo.png" alt="Star Crédito" className="w-8 h-8 object-contain" />
               <span className="font-semibold text-xl tracking-tight">Star Crédito</span>
             </div>
-            <p className="max-w-xs">Soluções financeiras com processo judicial transparente para quem precisa voltar a ter crédito.</p>
+            <p className="max-w-xs text-white/60">Soluções financeiras com processo judicial transparente para quem precisa voltar a ter crédito.</p>
           </div>
           <div className="text-right text-xs md:text-sm space-y-1">
             <div>Processo acompanhado por advogados • Contrato claro</div>
             <div>Atendimento humano • Sem robô</div>
-            <div className="pt-4 text-emerald-400">WhatsApp: (11) 98873-6147</div>
+            <div className="pt-4 text-[#00A8FF]">WhatsApp: (11) 98873-6147</div>
           </div>
         </div>
-        <div className="text-center text-[10px] mt-16 text-slate-500">© 2026 Star Crédito Soluções Financeiras • Este site é uma demonstração. Não substitui análise jurídica individual.</div>
+        <div className="text-center text-[10px] mt-16 text-white/40">© 2026 Star Crédito Soluções Financeiras • Este site é uma demonstração. Não substitui análise jurídica individual.</div>
       </footer>
     </div>
   );
