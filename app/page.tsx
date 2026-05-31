@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowRight, Check, Shield, Clock, Users, MessageCircle, 
-  Award, Phone 
+  Award, Phone, Star 
 } from 'lucide-react';
 
 export default function StarCreditoLanding() {
