@@ -1,0 +1,1 @@
+O conteúdo completo do page.tsx atualizado com a landing page premium, simulador, depoimentos, FAQ e logo integrada (código fornecido anteriormente na conversa)
