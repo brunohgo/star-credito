@@ -1,38 +1,15 @@
 "use client";
 
-import React, { useState, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Stars } from '@react-three/drei';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowRight, Check, Shield, Clock, Users, MessageCircle, 
   Award, Phone, Star 
 } from 'lucide-react';
-import * as THREE from 'three';
 
-// 3D Rotating Star Component
-function RotatingStar() {
-  const meshRef = React.useRef<THREE.Group>(null!);
-
-  useFrame((state) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y = state.clock.elapsedTime * 0.4;
-    }
-  });
-
-  return (
-    <group ref={meshRef}>
-      <mesh>
-        <icosahedronGeometry args={[1.8]} />
-        <meshPhongMaterial color="#00A8FF" emissive="#002244" shininess={100} />
-      </mesh>
-      <mesh scale={0.9}>
-        <icosahedronGeometry args={[1.8]} />
-        <meshPhongMaterial color="#FF8A00" emissive="#441100" shininess={80} transparent opacity={0.6} />
-      </mesh>
-    </group>
-  );
-}
+// Dynamic import - only loads on client
+const Scene3D = dynamic(() => import('./components/Scene3D'), { ssr: false });
 
 export default function StarCreditoLanding() {
   const [simulador, setSimulador] = useState({
@@ -172,21 +149,14 @@ export default function StarCreditoLanding() {
             </div>
           </div>
 
-          {/* 3D STAR */}
+          {/* 3D STAR - Now properly client-only */}
           <div className="h-[480px] lg:h-[560px]">
-            <Canvas camera={{ position: [0, 0, 7], fov: 45 }} style={{ background: 'transparent' }}>
-              <ambientLight intensity={0.7} />
-              <pointLight position={[8, 8, 8]} intensity={1.2} />
-              <Suspense fallback={null}>
-                <RotatingStar />
-              </Suspense>
-              <Stars radius={80} depth={40} count={100} factor={3} fade speed={1} />
-            </Canvas>
+            <Scene3D />
           </div>
         </div>
       </section>
 
-      {/* Rest of the page (simplified but working) */}
+      {/* Rest of sections */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl font-semibold mb-6">Site em fase final de ajustes</h2>
         <p className="text-white/70 max-w-md mx-auto">Estamos finalizando os elementos 3D. O site já está com a estrela 3D funcionando e o visual premium.</p>
